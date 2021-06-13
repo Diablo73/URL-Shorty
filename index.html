@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URL Shorty</title>
+		<link rel="shortcut icon" href="images/logo2.png"/>
+		
+		<link rel="stylesheet" href="css/css.css">
+		<link rel="stylesheet" href="css/fonts.css">
+    </head>
+    <body>
+		<header style="text-align: center;">
+			<input type="image" src="images/logo1.png" class="headlogol"> <input type="image" src="images/name1.png" class="headpic"> <input type="image" src="images/logo1.png" class="headlogor" style="transform: scaleX(-1)";>
+		</header>
+
+		<div style="display: block; text-align: center;">
+			<p class="heading"> URL Shorty </p>
+			<p class="name"> - by &emsp; Ashul &ensp; Gupta</p>
+		</div>
+		
+		<br><br><br><br><br>
+		
+		<div style="display: block; text-align: center;">
+
+			<input type="url" id="longURL" placeholder="Your long URL..." style="width: 960px; height: 50px; font-size: 32px; border-radius: 10px;">
+
+			<br><br>
+			
+			<input type="url" id="customCode" style="width: 360px; height: 50px; font-size: 32px;  text-align: center; border-radius: 10px;" placeholder="5-character custom code" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || (event.charCode > 47 && event.charCode < 58)" maxlength="5">
+			
+			<br><br>
+			
+			<button class="button" id="loginbut" onclick="shortURL()" style="display: inline-block; width: 200px; font-size: 32px;"> Shorty</button>
+
+			<br><br>
+
+			<div id="shortURL" class="short"></div>
+
+		</div>
+
+		<br><br><br><br>
+		
+        <script src="script.js"></script>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5eea359db14a8cb7"></script>
+    </body>
+</html>
